@@ -5,9 +5,11 @@ Storyboard for my beatmap Yui Ogura - Clear Morning
 Code are messed up in some places and I'm too lazy to clean it.
 
 - There are some comments in the scripts to note what that particular code does.
-- [Spectrum.cs](#Spectrum.cs) is modified from storybrew's stock spectrum script.
-- Storyboard resource paths are stored in [Assets.cs](#scriptslibrary/Assets.cs) to make code cleaner and easier to manage.
+- [Spectrum.cs](Spectrum.cs) is modified from storybrew's stock spectrum script.
+- Storyboard resource paths are stored in [Assets.cs](scriptslibrary/Assets.cs) to make code cleaner and easier to manage.
 - In the scripts, sometimes I use `Action<>` delegate instead of functions also to make it easier to look and manage.
+- The actual lyrics are stored in [text file](assetlibrary/lyric.txt), dashes are used as 1/4 beat delay.
+Any line not starting with number are ignored.
 
 ---
 
