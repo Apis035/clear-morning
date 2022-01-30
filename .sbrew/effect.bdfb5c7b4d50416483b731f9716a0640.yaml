@@ -1,0 +1,14 @@
+﻿FormatVersion: 7
+Name: "Lyrics"
+Script: "Lyrics"
+Config:
+  RandomSeed:
+    Type: "System.Int32"
+    Value: "1"
+    DisplayName: "Random seed"
+Layers:
+  cb9d21817a5b45ba9f24def7d32bf011:
+    Name: "Lyrics"
+    OsbLayer: Foreground
+    DiffSpecific: No
+    Visible: Yes
