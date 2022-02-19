@@ -33,13 +33,5 @@ namespace StorybrewCommon
         public static string FOLDER_FONT    = "sb/f";
         public static string FOLDER_SCENE   = "sb/scene";
         public static string FOLDER_ETC     = "sb/etc";
-
-        public struct Scene {
-            public string Path;
-            public int    Width;
-            public int    Height;
-            public float  ScaleX;
-            public float  ScaleY;
-        }
     }
 }
