@@ -14,7 +14,7 @@ namespace StorybrewScripts
     {
         public override void Generate() {
 		    var font = LoadFont(FOLDER_ETC, new FontDescription() {
-                FontPath = "Corbel",
+                FontPath = "Bahnschrift",
                 FontSize = 20,
                 Color    = Color4.White
             });
@@ -22,8 +22,8 @@ namespace StorybrewScripts
             Action<string, bool> drawText = (text, gd) => {
                 var t = (gd ? GetLayer(LAYER_CREDIT2) : GetLayer(LAYER_CREDIT))
                     .CreateSprite(font.GetTexture(text).Path, OsbOrigin.Centre, new Vector2(320, gd ? 370 : 350));
-                t.Scale(270443 + OFFSET, .5);
-                t.Fade(270443, 272191, 0, 1);
+                t.Scale(271317 + OFFSET, .5);
+                t.Fade(271317, 272191, 0, 1);
                 t.Fade(275394, 277142, 1, 0);
             };
 
@@ -36,8 +36,8 @@ namespace StorybrewScripts
             }
 
             var ba = GetLayer(LAYER_CREDIT).CreateSprite(LOGO_BA);
-            ba.Scale(OsbEasing.Out, 270443, 277142, .4, .5);
-            ba.Fade(270443, 272191, 0, 1);
+            ba.Scale(OsbEasing.Out, 271317, 277142, .4, .5);
+            ba.Fade(271317, 272191, 0, 1);
             ba.Fade(275394, 277142, 1, 0);
         }
     }
