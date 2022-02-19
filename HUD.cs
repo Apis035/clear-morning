@@ -18,7 +18,7 @@ namespace StorybrewScripts
 
             DiscPlayer();
             SpoilerWarning();
-            NotificationIcon();
+            SchoolEmblem();
         }
 
         void DiscPlayer() {
@@ -48,10 +48,10 @@ namespace StorybrewScripts
 
             Action<int, int> spoilerShow = (start, end) => {
                 spoiler.Fade(OsbEasing.Out, start + 500, start + 1500, 0, 1);
-                Disc.Fade(OsbEasing.Out, start, start + 1000, 1, .3);
+                Disc.Fade(OsbEasing.Out, start, start + 1000, 1, .4);
 
                 spoiler.Fade(end, end + 1000, 1, 0);
-                Disc.Fade(end + 500, end + 1500, .3, 1);
+                Disc.Fade(end + 500, end + 1500, .4, 1);
             };
 
             Action<int, Color4> spoilerColor = (time, color) =>
@@ -73,9 +73,7 @@ namespace StorybrewScripts
             spoilerColor(260249, Color4.Black);
         }
 
-        void NotificationIcon() {
-            // This style of sprite initializing makes it looks like
-            // the style of registering items in Minecraft modding...
+        void SchoolEmblem() {
             var abydos    = l.CreateSprite(LOGO_ABYDOS, OsbOrigin.Centre, new Vector2(-10, 0));
             var millenium = l.CreateSprite(LOGO_MILLENIUM, OsbOrigin.Centre, new Vector2(-10, 0));
             var gehenna   = l.CreateSprite(LOGO_GEHENNA, OsbOrigin.Centre, new Vector2(-10, 0));
