@@ -15,7 +15,7 @@ namespace StorybrewScripts
             // Vignette
             s = GetLayer(LAYER_VIGNETTE).CreateSprite(HUD_VIGNETTE, OsbOrigin.Centre, new Vector2(320, 220));
             s.Scale(-1000, SCALE * 1.1);
-            s.Fade(277142, .9);
+            s.Fade(277142, 1);
 
             // Flash
             s = GetLayer(LAYER_FLASH).CreateSprite(PIXEL);
