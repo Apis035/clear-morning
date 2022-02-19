@@ -19,7 +19,7 @@ namespace StorybrewScripts
             var cg = new List<Scene>();
 
             // Load images into cg[] array and display the list in log
-            // Adding/deleting any images in \scene\ folder with mess up the whole code
+            // Adding/deleting any images in \scene\ folder will mess up the whole code
             int i = 0;
             foreach (var scene in Directory.GetFiles($"{MapsetPath}/{FOLDER_SCENE}")) {
                 cg.Add(LoadScene($"{FOLDER_SCENE}/" + Path.GetFileName(scene))); 
@@ -210,7 +210,7 @@ namespace StorybrewScripts
             MoveX(264326, 266657, -5, 5, cg[72]);
 
             scale = 1;
-            MoveY(OsbEasing.InOutSine, 266657, 274229, -280, 280, cg[73])
+            MoveY(OsbEasing.InOutSine, 266657, 275394, -330, 330, cg[73])
                 .Fade(271317 + OFFSET, 275394 + OFFSET, 1, 0);
         }
 
@@ -250,7 +250,15 @@ namespace StorybrewScripts
             return s;
         }
 
-        // Could have set this as sonstructor in Scene struct (Assets.cs),
+        struct Scene {
+            public string Path;
+            public int    Width;
+            public int    Height;
+            public float  ScaleX;
+            public float  ScaleY;
+        }
+
+        // Could have set this as constructor in Scene struct,
         // but I don't know how to access GetMapsetBitmap() from there...
         Scene LoadScene(string path) {
             Scene i  = new Scene();
