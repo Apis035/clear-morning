@@ -174,9 +174,9 @@ namespace StorybrewScripts
             // Chorus transition
             MoveY(224715, 225589, 3, -3, cg[30]);
             Scale(225589, 227045, 1.03, 1, cg[86]);
-            MoveX(227045, 227919, 5, -5, cg[43]);
+            MoveX(227045, 227919, 5, -5, cg[42]);
             MoveY(227919, 229375, -6, 6, cg[90]);
-            Scale(229375, 230249, 1.03, 1, cg[44]);
+            Scale(229375, 230249, 1.03, 1, cg[43]);
             Scale(230249, 231705, 1.03, 1, cg[87]);
 
             scale = 1.04f;
@@ -191,7 +191,7 @@ namespace StorybrewScripts
             MoveX(245686, 248016, -10, 10, cg[37]);
 
             scale = 1;
-            MoveY(248016, 250346, -20, -60, cg[42]);
+            MoveY(248016, 250346, -40, -60, cg[44]);
             Scale(OsbEasing.Out, 250346, 252676, 1.1, 1, cg[41]);
 
             scale = 1.02f;
