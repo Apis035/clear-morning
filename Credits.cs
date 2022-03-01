@@ -30,9 +30,9 @@ namespace StorybrewScripts
             drawText("Mapset and Storyboard by Apis035", false);
 
             switch (Beatmap.Name) {
-                case "AF's Hard":      drawText("Guest Difficulty by Affirmation", true); break;
-                case "Hakku's Insane": drawText("Guest Difficulty by Hakku", true);       break;
-                case "Kaguya's Extra": drawText("Guest Difficulty by Kaguya_Sama", true); break;
+                case "AF's Hard":           drawText("Guest Difficulty by Affirmation", true); break;
+                case "Hakku's Insane":      drawText("Guest Difficulty by Hakku", true);       break;
+                case "Kaguya_Sama's Extra": drawText("Guest Difficulty by Kaguya_Sama", true); break;
             }
 
             var ba = GetLayer(LAYER_CREDIT).CreateSprite(LOGO_BA);
