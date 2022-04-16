@@ -12,6 +12,7 @@ Codes are messed up in some places and have inconsistent formatting.
 - Storyboard resource paths are stored in [Assets.cs](scriptslibrary/Assets.cs) to make code cleaner and easier to manage.
 - Sometimes I use `Action<>` delegate instead of methods to make it easier to manage because it is placed closer to where the function is going to be used.
 - Lyrics are stored in [text file](assetlibrary/lyric.txt). Dashes are used as 1/4 beat delay, any line not starting with number are ignored. This makes it easier to do the lyric timing as you can see any changes immediately by pressing `ctrl + s`.
+- You can switch whether to use japanese lyrics or romanized lyric by toggle the `romanized` option in `Lyrics` configuration. (`Effects -> Lyrics`)
 
 ---
 

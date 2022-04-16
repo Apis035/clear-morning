@@ -4,7 +4,7 @@ Script: "Lyrics"
 Config:
   romanized:
     Type: "System.Boolean"
-    Value: "True"
+    Value: "False"
   RandomSeed:
     Type: "System.Int32"
     Value: "1"
