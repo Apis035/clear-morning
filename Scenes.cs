@@ -69,7 +69,7 @@ namespace StorybrewScripts
                 .Fade(OsbEasing.OutExpo, 52288 + OFFSET, 53453 + OFFSET, 1, 0);
 
             // Chorus
-            Scale(OsbEasing.Out, 56948, 66268, 1.5, 1, cg[0]);
+            Scale(OsbEasing.OutCubic, 56948, 66268, 2, 1, cg[0]);
 
             scale = 1;
             MoveY(OsbEasing.InOutSine, 66268, 74424, -60, 40, cg[1]);
