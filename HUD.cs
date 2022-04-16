@@ -18,7 +18,7 @@ namespace StorybrewScripts
 
             DiscPlayer();
             SpoilerWarning();
-            SchoolEmblem();
+            AcademyEmblem();
         }
 
         void DiscPlayer() {
@@ -73,7 +73,7 @@ namespace StorybrewScripts
             spoilerColor(260249, Color4.Black);
         }
 
-        void SchoolEmblem() {
+        void AcademyEmblem() {
             var abydos    = l.CreateSprite(LOGO_ABYDOS, OsbOrigin.Centre, new Vector2(-10, 0));
             var millenium = l.CreateSprite(LOGO_MILLENIUM, OsbOrigin.Centre, new Vector2(-10, 0));
             var gehenna   = l.CreateSprite(LOGO_GEHENNA, OsbOrigin.Centre, new Vector2(-10, 0));
@@ -83,8 +83,8 @@ namespace StorybrewScripts
             Action<OsbSprite, int, int> iconShow = (sprite, start, end) => {
                 if (sprite.ScaleAt(start).X != .45) sprite.Scale(start, .45);
                 sprite.MoveY(OsbEasing.OutCirc, start - 100, start + 300, 340, 355);
-                sprite.Fade(start - 100, start + 200, 0, .9);
-                sprite.Fade(end - 100, end + 200, .9, 0);
+                sprite.Fade(start - 100, start + 200, 0, 1);
+                sprite.Fade(end - 100, end + 200, 1, 0);
             };
 
             Action<OsbSprite, int> iconMoveUp = (sprite, time) => {
