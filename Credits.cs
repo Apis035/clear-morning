@@ -13,6 +13,8 @@ namespace StorybrewScripts
     public class Credits : StoryboardObjectGenerator
     {
         public override void Generate() {
+            GetLayer(LAYER_CREDIT2);
+
 		    var font = LoadFont(FOLDER_ETC, new FontDescription() {
                 FontPath = "Bahnschrift",
                 FontSize = 20,
