@@ -14,10 +14,12 @@ namespace StorybrewScripts
 {
     public class Lyrics : StoryboardObjectGenerator
     {
+        [Configurable] public bool romanized = false;
+
         public override void Generate() {
             var l        = GetLayer(LAYER_LYRIC);
             var beat     = (int)Beatmap.GetTimingPointAt(0).BeatDuration;
-		    var path     = $"{ProjectPath}/assetlibrary/lyric.txt";
+		    var path     = $"{ProjectPath}/assetlibrary/" + (romanized ? "lyric romanized" : "lyric") + ".txt";
             var position = new Vector2(20, 390);
 
             AddDependency(path);
