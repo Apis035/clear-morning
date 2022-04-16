@@ -29,23 +29,23 @@ namespace StorybrewScripts
 
             // Intro 1
             scale = 1.02f;
-            MoveX(1026, 2482, 5, -5, cg[47]);
-            MoveX(2482, 3356, 3, -3, cg[48]);
-            MoveX(3356, 4812, 6, -6, cg[46]);
-            MoveX(4812, 5686, 2, -2, cg[49]);
+            MoveX(1026, 2482, 5, -5, cg[46]);
+            MoveX(2482, 3356, 3, -3, cg[47]);
+            MoveX(3356, 4812, 6, -6, cg[45]);
+            MoveX(4812, 5686, 2, -2, cg[48]);
             MoveX(5686, 7142, -5, 5, cg[22]);
             MoveX(7142, 8016, -3, 3, cg[23]);
             Scale(8016, 9181, 1.04, 1, cg[17]);
-            Scale(9181, 10346, 1, 1.1, cg[51]);
+            Scale(9181, 10346, 1, 1.1, cg[50]);
 
             // Intro 2
-            MoveY(OsbEasing.OutCirc, 10346, 12676, 280, -220, cg[50])
+            MoveY(OsbEasing.OutCirc, 10346, 12676, 280, -220, cg[49])
                 .Fade(10346 + OFFSET, 1);
             MoveX(12676, 13550, 6, -6, cg[18]);
             MoveX(13550, 15006, 8, -8, cg[19]);
 
             scale = 1.15f;
-            MoveX(OsbEasing.OutSine, 15006, 17336, 55, -55, cg[52]);
+            MoveX(OsbEasing.OutSine, 15006, 17336, 55, -55, cg[51]);
 
             scale = 1.02f;
             MoveX(17336, 19666, -5, 5, cg[20]);
@@ -54,18 +54,18 @@ namespace StorybrewScripts
 
             // Verse
             scale = 1.03f;
-            MoveX(21996, 28987, -15, 15, cg[53])
+            MoveX(21996, 28987, -15, 15, cg[52])
                 .Fade(21996 + OFFSET, 23744 + OFFSET, 0, 1);
-            MoveX(28987, 38307, 15, -15, cg[54])
+            MoveX(28987, 38307, 15, -15, cg[53])
                 .Fade(OsbEasing.OutExpo, 37725 + OFFSET, 38307 + OFFSET, 1, 0);
 
             // Prechorus
-            MoveX(38307, 47627, -15, 15, cg[57])
+            MoveX(38307, 47627, -15, 15, cg[56])
                 .Fade(38307 + OFFSET, 40055 + OFFSET, 0, 1);
 
             scale = 1.02f;
-            MoveX(OsbEasing.OutSine, 47627, 49958, 8, -8, cg[56]);
-            MoveX(OsbEasing.OutSine, 49958, 53453, -10, 10, cg[55])
+            MoveX(OsbEasing.OutSine, 47627, 49958, 8, -8, cg[55]);
+            MoveX(OsbEasing.OutSine, 49958, 53453, -10, 10, cg[54])
                 .Fade(OsbEasing.OutExpo, 52288 + OFFSET, 53453 + OFFSET, 1, 0);
 
             // Chorus
@@ -84,28 +84,28 @@ namespace StorybrewScripts
 
             // Verse
             scale = 1.02f;
-            MoveX(95394, 98890, -10, 10, cg[67])
+            MoveX(95394, 98890, -10, 10, cg[66])
                 .Fade(95394 + OFFSET, 97142 + OFFSET, 0, 1);
-            MoveX(98890, 103550, -10, 12, cg[68]);
-            Scale(OsbEasing.OutSine, 103550, 105880, 1.05, 1, cg[75]);
+            MoveX(98890, 103550, -10, 12, cg[67]);
+            Scale(OsbEasing.OutSine, 103550, 105880, 1.05, 1, cg[74]);
 
             scale = 1.04f;
-            MoveX(105880, 112870, -25, 5, cg[74])
+            MoveX(105880, 112870, -25, 5, cg[73])
                 .Fade(109958 + OFFSET, 109959 + OFFSET, 1, 0);
 
             scale = 1.048f; /* the frame has different zoom */
-            s = MoveX(105880, 112870, -5, 25, cg[76]);
+            s = MoveX(105880, 112870, -5, 25, cg[75]);
             s.Fade(108792 + OFFSET, 109958 + OFFSET, 0, 1);
             s.Fade(OsbEasing.OutExpo, 112288 + OFFSET, 112870 + OFFSET, 1, 0);
 
             // Prechorus
             scale = 1.02f;
-            MoveX(112870, 118404, 10, -10, cg[77])
+            MoveX(112870, 118404, 10, -10, cg[76])
                 .Fade(112870 + OFFSET, 114618 + OFFSET, 0, 1);
-            Scale(117239, 122191, 1, 1.07, cg[78])
+            Scale(117239, 122191, 1, 1.07, cg[77])
                 .Fade(117239 + OFFSET, 118404 + OFFSET, 0, 1);
-            MoveX(OsbEasing.OutSine, 122191, 124521, -5, 5, cg[69]);
-            MoveX(OsbEasing.OutSine, 124521, 128016, 8, -8, cg[70])
+            MoveX(OsbEasing.OutSine, 122191, 124521, -5, 5, cg[68]);
+            MoveX(OsbEasing.OutSine, 124521, 128016, 8, -8, cg[69])
                 .Fade(OsbEasing.OutExpo, 126851 + OFFSET, 128016 + OFFSET, 1, 0);
 
             s = MoveY(129181, 130637, -10, 10, cg[9]);
@@ -115,10 +115,10 @@ namespace StorybrewScripts
             // Chorus
             MoveY(OsbEasing.OutSine, 131511, 133841, -40, 20, cg[10]);
             MoveX(OsbEasing.OutSine, 133841, 136171, -10, 10, cg[11]);
-            MoveX(OsbEasing.OutSine, 136171, 138501, 10, -10, cg[63]);
-            MoveX(138501, 140831, -10, 10, cg[65]);
-            MoveX(140831, 143161, 10, -10, cg[64]);
-            MoveX(143161, 145492, -10, 10, cg[66]);
+            MoveX(OsbEasing.OutSine, 136171, 138501, 10, -10, cg[62]);
+            MoveX(138501, 140831, -10, 10, cg[64]);
+            MoveX(140831, 143161, 10, -10, cg[63]);
+            MoveX(143161, 145492, -10, 10, cg[65]);
 
             scale = 1;
             MoveY(OsbEasing.OutSine, 145492, 147822, -60, -20, cg[16]);
@@ -130,54 +130,54 @@ namespace StorybrewScripts
             Scale(OsbEasing.Out, 149569, 150152, 1.3, 1.1, cg[15]);
 
             scale = 1;
-            MoveY(OsbEasing.InOutSine, 150152, 159472, 280, -280, cg[91]);
+            MoveY(OsbEasing.InOutSine, 150152, 159472, 280, -280, cg[90]);
 
             scale = 1.04f;
-            MoveX(OsbEasing.InOutSine, 159472, 164132, -20, 20, cg[92]);
-            Scale(164132, 168792, 1, 1.05, cg[93]);
+            MoveX(OsbEasing.InOutSine, 159472, 164132, -20, 20, cg[91]);
+            Scale(164132, 168792, 1, 1.05, cg[92]);
 
             // Bridge
             scale = 1.02f;
-            MoveX(169958, 173453, -10, 10, cg[79])
+            MoveX(169958, 173453, -10, 10, cg[78])
                 .Fade(169958 + OFFSET, 171705 + OFFSET, 0, 1);
-            MoveX(173453, 178113, -10, 10, cg[80]);
+            MoveX(173453, 178113, -10, 10, cg[79]);
             MoveY(OsbEasing.OutSine, 178113, 180443, -10, 10, cg[26]);
             MoveX(OsbEasing.OutSine, 180443, 182773, -10, 10, cg[27]);
             Scale(182773, 187433, 1.2, 1, cg[28]);
 
             // Chorus solo
-            MoveX(187433, 189763, 10, -10, cg[58]);
-            MoveX(189763, 192093, -10, 10, cg[60]);
-            MoveX(192093, 194424, -10, 10, cg[61]);
+            MoveX(187433, 189763, 10, -10, cg[57]);
+            MoveX(189763, 192093, -10, 10, cg[59]);
+            MoveX(192093, 194424, -10, 10, cg[60]);
             MoveX(194424, 196754, -10, 10, cg[39]);
-            MoveX(196754, 199084, 10, -10, cg[59]);
-            MoveX(199084, 201414, -10, 10, cg[62]);
+            MoveX(196754, 199084, 10, -10, cg[58]);
+            MoveX(199084, 201414, -10, 10, cg[61]);
             MoveX(201414, 203744, 10, -10, cg[40]);
-            Scale(OsbEasing.OutSine, 203744, 206074, 1.05, 1, cg[38]);
+            Scale(OsbEasing.OutSine, 203744, 206074, 1.2, 1, cg[38]);
 
             // Prechorus
             Scale(207239, 210734, 1.1, 1, cg[24])
                 .Fade(207239 + OFFSET, 208987 + OFFSET, 0, 1);
             Scale(OsbEasing.OutSine, 210734, 215394, 1, 1.1, cg[25]);
             MoveX(215394, 216268, -3, 3, cg[29]);
-            MoveY(216268, 217725, -8, 8, cg[81]);
-            MoveX(217725, 218598, 4, -4, cg[82]);
-            MoveX(218598, 220055, -5, 5, cg[83]);
-            Scale(OsbEasing.OutSine, 220055, 222385, 1, 1.1, cg[84])
+            MoveY(216268, 217725, -8, 8, cg[80]);
+            MoveX(217725, 218598, 4, -4, cg[81]);
+            MoveX(218598, 220055, -5, 5, cg[82]);
+            Scale(OsbEasing.OutSine, 220055, 222385, 1, 1.3, cg[83])
                 .Fade(220637 + OFFSET, 222385 + OFFSET, 1, 0);
 
-            s = Scale(222385, 224132, 1, 1.1, cg[85]);
-            s.Move(222385 + OFFSET, 224132 + OFFSET, 320, 240, 300, 260);
+            s = Scale(222385, 224132, 1, 1.6, cg[84]);
+            s.Move(222385 + OFFSET, 224132 + OFFSET, 320, 240, 260, 260);
             s.Fade(222385 + OFFSET, 223550 + OFFSET, 0, 1);
-            s.Fade(OsbEasing.OutCubic, 223550 + OFFSET, 224132 + OFFSET, 1, 0);
+            s.Fade(OsbEasing.OutCubic, 223550 + OFFSET, 223841 + OFFSET, 1, 0);
 
             // Chorus transition
             MoveY(224715, 225589, 3, -3, cg[30]);
-            Scale(225589, 227045, 1.03, 1, cg[86]);
+            Scale(225589, 227045, 1.03, 1, cg[85]);
             MoveX(227045, 227919, 5, -5, cg[42]);
-            MoveY(227919, 229375, -6, 6, cg[90]);
+            MoveY(227919, 229375, -6, 6, cg[89]);
             Scale(229375, 230249, 1.03, 1, cg[43]);
-            Scale(230249, 231705, 1.03, 1, cg[87]);
+            Scale(230249, 231705, 1.03, 1, cg[86]);
 
             scale = 1.04f;
             MoveX(OsbEasing.OutSine, 231705, 234035, -15, 15, cg[89]);
@@ -187,7 +187,7 @@ namespace StorybrewScripts
             MoveX(OsbEasing.OutSine, 238695, 243356, -20, 20, cg[36]);
 
             scale = 1.02f;
-            MoveX(243356, 245686, -10, 10, cg[88]);
+            MoveX(243356, 245686, -10, 10, cg[87]);
             MoveX(245686, 248016, -10, 10, cg[37]);
 
             scale = 1;
@@ -206,11 +206,11 @@ namespace StorybrewScripts
 
             // Outro
             scale = 1.02f;
-            MoveX(261996, 264326, -5, 5, cg[71]);
-            MoveX(264326, 266657, -5, 5, cg[72]);
+            MoveX(261996, 264326, -5, 5, cg[70]);
+            MoveX(264326, 266657, -5, 5, cg[71]);
 
             scale = 1;
-            MoveY(OsbEasing.InOutSine, 266657, 275394, -330, 330, cg[73])
+            MoveY(OsbEasing.InOutSine, 266657, 275394, -330, 330, cg[72])
                 .Fade(271317 + OFFSET, 275394 + OFFSET, 1, 0);
         }
 
