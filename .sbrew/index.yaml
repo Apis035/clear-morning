@@ -1,12 +1,13 @@
 ﻿FormatVersion: 7
-BeatmapId: 3355984
-BeatmapName: "New World"
+BeatmapId: 3493833
+BeatmapName: "Kaguya_Sama's Extra"
 Assemblies:
 Layers:
   - "b766f238edc04884b6c56a19e244389e"
   - "449ffb14115c4654869f18430d660570"
   - "c725b455427b444a9000f840dec6fcae"
   - "fe612783d65b47be990d2a69e8e6e6d4"
+  - "44618c45f70148dba452041bbee09a52"
   - "0595bbef918c4f23aabfbc2ef34b8d01"
   - "cb9d21817a5b45ba9f24def7d32bf011"
   - "c433436d6ed9438f9780d5d75d232413"

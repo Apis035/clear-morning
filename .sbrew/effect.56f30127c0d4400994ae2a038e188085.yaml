@@ -7,6 +7,11 @@ Config:
     Value: "0"
     DisplayName: "Random seed"
 Layers:
+  44618c45f70148dba452041bbee09a52:
+    Name: "Credit GD"
+    OsbLayer: Foreground
+    DiffSpecific: Yes
+    Visible: Yes
   0595bbef918c4f23aabfbc2ef34b8d01:
     Name: "Credit"
     OsbLayer: Foreground
