@@ -12,7 +12,7 @@ namespace StorybrewCommon
         public static string HUD_LINE       = "sb/etc/line.png";
         public static string HUD_BAR        = "sb/etc/bar.png";
         public static string HUD_STAR       = "sb/etc/star.png";
-        public static string HUD_SPOILER    = "sb/etc/spoil.png";
+        public static string HUD_SPOILER    = "sb/etc/spoiler.png";
 
         public static string LOGO_ABYDOS    = "sb/etc/abydos.png";
         public static string LOGO_MILLENIUM = "sb/etc/millenium.png";
@@ -31,7 +31,7 @@ namespace StorybrewCommon
         public static string LAYER_LYRIC    = "Lyrics";
 
         public static string FOLDER_FONT    = "sb/f";
-        public static string FOLDER_SCENE   = "sb/scene";
+        public static string FOLDER_SCENE   = "sb/cs";
         public static string FOLDER_ETC     = "sb/etc";
     }
 }
